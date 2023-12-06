@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  plex:
+    container_name: plex
+    image: plexinc/pms-docker
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      TZ: Europe/London
+    volumes:
+      - /tank/docker/plex:/config
+      - /tmp:/transcode
+      - /tank/media/movies:/tank/media/movies:ro
+      - /tank/media/tv:/tank/media/tv:ro
+      - /tank/media/music:/tank/media/music:ro
+      - /tank/media/videos:/tank/media/videos:ro
+      - /tank/media/sport:/tank/media/sport:ro
+      - /tank/media/youtube:/tank/media/youtube:ro
+    devices:
+      - /dev/dri:/dev/dri
