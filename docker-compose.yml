@@ -9,7 +9,7 @@ services:
     environment:
       TZ: Europe/London
     volumes:
-      - /tank/docker/plex:/config
+      - /containers/plex:/config
       - /tmp:/transcode
       - /tank/media/movies:/tank/media/movies:ro
       - /tank/media/tv:/tank/media/tv:ro
