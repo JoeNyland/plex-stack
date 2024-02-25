@@ -15,6 +15,6 @@ services:
       - /tank/media/tv:/tank/media/tv:ro
       - /tank/media/music:/tank/media/music:ro
       - /tank/media/videos:/tank/media/videos:ro
-      - /tank/media/sport:/tank/media/sport
+      - /tank/media/sport:/tank/media/sport:ro
     devices:
       - /dev/dri:/dev/dri
