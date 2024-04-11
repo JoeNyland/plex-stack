@@ -10,7 +10,7 @@ services:
       TZ: Europe/London
     volumes:
       - /containers/plex:/config
-      - /tmp:/transcode
+      - /tmp/transcode:/transcode
       - /tank/media/movies:/tank/media/movies:ro
       - /tank/media/tv:/tank/media/tv:ro
       - /tank/media/music:/tank/media/music:ro
