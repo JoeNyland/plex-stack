@@ -8,10 +8,6 @@ services:
     network_mode: host
     environment:
       TZ: Europe/London
-    labels:
-      traefik.enable: true
-      traefik.http.services.plex.loadbalancer.server.port: 32400
-      traefik.http.routers.plex.rule: Host(`plex`)
     volumes:
       - /containers/plex:/config
       - /tmp:/transcode
