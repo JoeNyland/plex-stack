@@ -6,6 +6,7 @@ services:
     network_mode: host
     environment:
       TZ: Europe/London
+    user: "994:994"
     volumes:
       - /containers/plex:/config
       - /tmp/transcode:/transcode
