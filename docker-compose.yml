@@ -6,7 +6,7 @@ services:
     network_mode: host
     environment:
       TZ: Europe/London
-      PLEX_UID: 994
+      PLEX_UID: 991
       PLEX_GID: 994
     volumes:
       - /containers/plex:/config
