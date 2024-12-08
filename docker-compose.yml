@@ -8,7 +8,7 @@ services:
       PLEX_UID: 991
       PLEX_GID: 994
     volumes:
-      - /containers/plex-plex:/config
+      - /containers/plex:/config
       - /tmp/plex:/transcode
       - /tank/media/movies:/tank/media/movies:ro
       - /tank/media/tv:/tank/media/tv:ro
