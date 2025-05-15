@@ -16,6 +16,5 @@ services:
       - /tank/media/music:/tank/media/music
       - /tank/media/videos:/tank/media/videos
       - /tank/media/sport:/tank/media/sport
-      - /tank/media/sport_archive:/tank/media/sport_archive
     devices:
       - /dev/dri:/dev/dri
