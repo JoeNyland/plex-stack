@@ -1,7 +1,7 @@
 services:
   plex:
     container_name: plex
-    image: plexinc/pms-docker:${PLEX_IMAGE_TAG:-}
+    image: plexinc/pms-docker:${PLEX_IMAGE_TAG:-latest}
     restart: unless-stopped
     network_mode: host
     environment:
